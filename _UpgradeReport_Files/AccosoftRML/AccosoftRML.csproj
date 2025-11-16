@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B48688E-471E-49B0-8296-097F1643D193}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccosoftRML</RootNamespace>
+    <AssemblyName>AccosoftRML</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AccosoftLogWriter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AccosoftLogWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="AccosoftNineteenCDL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AccosoftNineteenCDL.dll</HintPath>
+    </Reference>
+    <Reference Include="AccosoftReportUtilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AccosoftReportUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="AccosoftUtilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AccosoftUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MACE-QATAR\Projectes\19 C\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\..\EBServices19c\ComponentsMaceConverted19c\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseEntity\BaseEntity.cs" />
+    <Compile Include="Busiess Logic\Class1.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\AccountCodeLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\Class1.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\GeneralRmLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\GPEMaterialPlantMappingLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\GroupMasterLogicRM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\GroupMasterLogicRMSha.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\GroupSubCategoryLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\ItemMasterLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\ItemMovementRawmaterialLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\MaterialCodeChangeLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\MaterialOrderPostingLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\MaterialReceiptNotificationLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\MaterialReceiptPOChangeRMLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\MaterialReceiptSourceChangeRMLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\MaterialIssueToSiteRMLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\MaterialRequisitionDataListRMLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\MaterialRequisitionRFQEntryLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\PhysicalStockEntryLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\PhysicalStockEntryPlantLogic..cs" />
+    <Compile Include="Busiess Logic\RawMaterial\PhysicalStockEntryPRCLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\PhysicalStockEntryProjectPRCLogic..cs" />
+    <Compile Include="Busiess Logic\RawMaterial\PhysicalStockTransferEntryRMLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\PurchaseEntryLogicRM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\PurchaseOrderPRCLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\PurchaseReuqisitionPRCLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\PurchaseReuqisitionPRCNewLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\RateCardTransporterLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\RateCardVendorLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\RawMaterailAuditLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\RawMaterialQtyCurrentStockRMX.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\RawMaterialTrailerTripRateLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\ReceiptApprovalLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\ReceiptEntryRmLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\ReceiptPriceRevision.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\ReceiptSourceChangeRMLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\ReportsListLogicRM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\RMProjectWiseConsumptionReportLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\RMWeighbridgeTokenDashBoardLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\RMWeighbridgeTokenEntryLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\RMXtraDriverTripLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\MaterialRequestRMLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\SalesRMLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\SourceMasterLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\SteelReceiptEntryLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\SupplierOriginCountryMasterLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\TollLocationMasterLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\TrailerDriverAllocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\TrailerDriverTrip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\UOMConversionLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\UOMMasterLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\VendorExpiryDocumentEntryLogic.cs" />
+    <Compile Include="Busiess Logic\RawMaterial\VendorMasterLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\WasterTransferLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busiess Logic\RawMaterial\UOMMasterShaluLogics.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity Classes\RawMaterial\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
