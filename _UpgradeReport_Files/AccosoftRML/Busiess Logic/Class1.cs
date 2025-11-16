@@ -8,7 +8,7 @@ namespace AccosoftRML.Busiess_Logic
 {
     class Class1
     {
-
+        mxajk
 
 
     }
