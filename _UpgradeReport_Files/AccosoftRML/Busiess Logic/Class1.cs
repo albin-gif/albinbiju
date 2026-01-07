@@ -9,6 +9,7 @@ namespace AccosoftRML.Busiess_Logic
     class Class1
     {
         int x = 10;
+        int y = 10;
 
 
     }
